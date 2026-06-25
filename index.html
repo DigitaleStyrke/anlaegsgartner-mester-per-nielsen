@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anlægsgartner Mester Per Nielsen — Anlægsgartner i Dragør & Tårnby</title>
+<meta name="description" content="Professionel anlægsgartner med base i Tårnby. Ring til Mester Per Nielsen på 27 26 88 88 og få et gratis tilbud.">
+<link rel="canonical" href="https://www.mester-per-nielsen.dk">
+<meta property="og:title" content="Anlægsgartner Mester Per Nielsen — Dragør & Tårnby">
+<meta property="og:description" content="Professionel anlægsgartner med base i Tårnby — haveanlæg, belægning og beplantning.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:oklch(0.984 0.006 85);
+  --paper-2:oklch(0.965 0.008 80);
+  --card:oklch(0.995 0.004 85);
+  --ink:oklch(0.245 0.016 65);
+  --ink-soft:oklch(0.46 0.014 65);
+  --ink-faint:oklch(0.62 0.012 70);
+  --line:oklch(0.885 0.012 75);
+  --line-soft:oklch(0.925 0.009 78);
+  --accent:#2f7a4e;
+  --accent-deep:#1e5c38;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;
+  --mono:"JetBrains Mono",monospace;
+  --wrap:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:17px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;width:100%;height:100%;object-fit:cover}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.01em;line-height:1.08;text-wrap:balance}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:oklch(0.984 0.006 85 / .92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-size:21px;letter-spacing:-0.01em}
+.brand .mark{width:30px;height:30px;border:1.5px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:500;color:var(--accent)}
+.nav-links{display:flex;gap:30px;font-size:15px;color:var(--ink-soft)}
+.nav-links a{transition:.15s}.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:20px}
+.nav-phone{font-family:var(--mono);font-size:14px;letter-spacing:.02em}
+.btn{font-family:var(--sans);font-size:15px;font-weight:600;padding:11px 22px;border-radius:2px;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* hero */
+.hero{padding:84px 0 64px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end}
+.hero h1{font-size:clamp(40px,5vw,72px);margin:26px 0 0}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{font-size:19px;color:var(--ink-soft);margin-top:22px;max-width:36ch;line-height:1.6}
+.hero .about-blurb{margin-top:18px;font-size:15px;color:var(--ink-soft);max-width:38ch;line-height:1.65;border-left:3px solid var(--accent);padding-left:14px}
+.hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero-side{border-left:1px solid var(--line);padding-left:40px}
+.hero-side .label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:18px}
+.hero-list{list-style:none;display:flex;flex-direction:column}
+.hero-list li{padding:13px 0;border-bottom:1px solid var(--line-soft);display:flex;align-items:baseline;gap:13px;font-size:16px}
+.hero-list li:last-child{border-bottom:0}
+.hero-list .n{font-family:var(--mono);font-size:12px;color:var(--accent);min-width:22px}
+.hero-stats{display:flex;gap:32px;margin-top:30px;flex-wrap:wrap}
+.hero-stats .s .v{font-family:var(--serif);font-size:32px;color:var(--ink)}
+.hero-stats .s .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.rating-badge{font-family:var(--mono);font-size:13px;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 14px;margin-top:18px}
+.rating-badge .stars{color:var(--accent)}
+
+/* trust strip */
+.trust{border-bottom:1px solid var(--line);background:var(--paper-2)}
+.trust-row{display:flex;flex-wrap:wrap;gap:0;justify-content:space-between}
+.trust-item{flex:1;min-width:180px;padding:20px 24px;border-right:1px solid var(--line);font-size:14px;color:var(--ink-soft);display:flex;align-items:center;gap:11px}
+.trust-item:last-child{border-right:0}
+.trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0}
+
+/* sections */
+section.blk{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(30px,3.4vw,46px);max-width:20ch}
+.sec-head .meta{font-family:var(--mono);font-size:13px;color:var(--ink-faint);max-width:30ch;text-align:right}
+
+/* services */
+.serv{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.serv-vis{border-right:1px solid var(--line);min-height:480px;overflow:hidden;position:relative}
+.serv-vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.serv-list{display:flex;flex-direction:column}
+.serv-item{padding:34px 38px;border-bottom:1px solid var(--line)}
+.serv-item:last-child{border-bottom:0}
+.serv-item h3{font-size:23px;margin-bottom:10px}
+.serv-item p{color:var(--ink-soft);font-size:15px;line-height:1.65}
+.serv-item .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.gal-item{min-height:280px;overflow:hidden;border-right:1px solid var(--line);position:relative}
+.gal-item:last-child{border-right:0}
+.gal-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s}
+.gal-item:hover img{transform:scale(1.04)}
+
+/* about */
+.about-sec{background:var(--ink);color:var(--paper)}
+.about-sec .eyebrow{color:var(--accent)}
+.about-sec .eyebrow::before{background:var(--accent)}
+.about-sec h2{color:var(--paper)}
+.about-sec .meta{color:oklch(0.7 0.01 70)}
+.about-body{font-family:var(--serif);font-size:clamp(22px,2.6vw,34px);line-height:1.3;letter-spacing:-0.01em;color:var(--paper);max-width:72ch}
+.about-stats{display:flex;gap:48px;margin-top:48px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:36px}
+.about-stats .s .v{font-family:var(--serif);font-size:38px;color:var(--paper)}
+.about-stats .s .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.7 0.01 70);margin-top:6px}
+
+/* reviews */
+.reviews-editorial{display:flex;flex-direction:column;gap:0}
+.rev-item{padding:32px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start}
+.rev-item:last-child{border-bottom:0}
+.rev-item blockquote{font-family:var(--serif);font-size:clamp(18px,2vw,24px);line-height:1.35;letter-spacing:-0.01em;color:var(--ink)}
+.rev-item .stars{color:var(--accent);font-size:16px;letter-spacing:2px;margin-bottom:14px}
+.rev-item .src{margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.rev-aside{text-align:right;min-width:110px}
+.rev-aside .score{font-family:var(--serif);font-size:44px;color:var(--ink);line-height:1}
+.rev-aside .label{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px}
+
+/* process */
+.process-steps{display:flex;flex-direction:column;gap:0}
+.proc-item{display:grid;grid-template-columns:64px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line);align-items:start}
+.proc-item:last-child{border-bottom:0}
+.proc-num{font-family:var(--serif);font-size:42px;color:var(--accent);line-height:1;padding-top:4px}
+.proc-body h3{font-family:var(--serif);font-size:24px;margin-bottom:10px}
+.proc-body p{color:var(--ink-soft);font-size:15px;line-height:1.7}
+
+/* faq */
+.faq-list{display:flex;flex-direction:column;gap:0}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:pointer;font-size:17px;color:var(--ink);user-select:none;gap:24px}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{font-family:var(--mono);font-size:18px;color:var(--ink-faint);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+.faq-item.open .faq-q{color:var(--accent)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a-inner{padding:0 0 22px;font-size:15px;color:var(--ink-soft);line-height:1.85}
+.faq-item.open .faq-a{max-height:300px}
+
+/* maps */
+.maps-sec{border-top:1px solid var(--line)}
+.maps-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.maps-info{padding:48px;border-right:1px solid var(--line)}
+.maps-info h3{font-family:var(--serif);font-size:30px;margin-bottom:24px}
+.maps-info .detail{font-family:var(--mono);font-size:14px;color:var(--ink-soft);margin-bottom:12px;display:flex;gap:10px}
+.maps-info .detail strong{color:var(--ink);min-width:72px}
+.maps-embed{min-height:340px;position:relative}
+.maps-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* contact */
+.contact{background:var(--paper-2);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact h2{font-size:clamp(28px,3.2vw,42px);margin:18px 0 16px}
+.contact .lede{color:var(--ink-soft);font-size:16px;max-width:38ch;line-height:1.65}
+.contact-info{margin-top:28px;display:flex;flex-direction:column;gap:12px;font-family:var(--mono);font-size:14px}
+.contact-form{background:var(--card);border:1px solid var(--line);padding:34px}
+.field{margin-bottom:18px}
+.field label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:8px}
+.field input,.field textarea{width:100%;padding:12px 14px;border:1px solid var(--line);background:var(--paper);font-family:var(--sans);font-size:15px;color:var(--ink);border-radius:2px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+
+/* footer */
+footer{background:var(--ink);color:oklch(0.78 0.01 70);padding:64px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-brand{font-family:var(--serif);font-size:22px;color:var(--paper);display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.foot-brand .mark{width:28px;height:28px;border:1.5px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:var(--accent)}
+.foot-col h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.6 0.01 70);margin-bottom:14px}
+.foot-col a,.foot-col p{display:block;font-size:14px;margin-bottom:8px;color:oklch(0.8 0.01 70)}
+.foot-col a:hover{color:var(--paper)}
+.foot-bot{display:flex;justify-content:space-between;padding-top:20px;font-family:var(--mono);font-size:12px;color:oklch(0.58 0.01 70);flex-wrap:wrap;gap:10px}
+
+.mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--accent);padding:14px 24px}
+.mobile-cta a{display:flex;align-items:center;justify-content:center;gap:10px;color:#fff;font-size:16px;font-weight:700}
+
+.fu{opacity:0;transform:translateY(22px)}
+
+@media(max-width:900px){
+  .nav-links,.nav-phone{display:none}
+  .hero-grid,.serv,.maps-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:28px}
+  .serv-vis{border-right:0;border-bottom:1px solid var(--line);min-height:280px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .maps-info{border-right:0;border-bottom:1px solid var(--line)}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-item{border-right:0;border-bottom:1px solid var(--line)}
+  .rev-item{grid-template-columns:1fr}
+  .rev-aside{text-align:left}
+  .proc-item{grid-template-columns:48px 1fr;gap:20px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .trust-item{border-right:0;border-bottom:1px solid var(--line);min-width:100%}
+  .foot-grid{grid-template-columns:1fr}
+  .about-stats{gap:28px}
+  section.blk{padding:64px 0}
+  .mobile-cta{display:block}
+  footer{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mark">M</span> Mester Per Nielsen</a>
+    <nav class="nav-links">
+      <a href="#ydelser">Ydelser</a>
+      <a href="#om-os">Om mig</a>
+      <a href="#anmeldelser">Anmeldelser</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-phone">27 26 88 88</span>
+      <a class="btn btn-primary" href="tel:27268888">Ring nu</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Anlægsgartner · Dragør & Tårnby</div>
+      <h1>Mester Per Nielsen — <em>anlægsgartner</em> i Dragør</h1>
+      <p class="lede">Professionelt haveanlæg, belægning og beplantning — udført med håndværksmæssig stolthed siden dag ét.</p>
+      <p class="about-blurb">Hos Mester Per Nielsen får du en erfaren fagmand med lokalkendskab til Dragør og Tårnby-området. Fast pris, ingen overraskelser.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:27268888">Ring: 27 26 88 88</a>
+        <a class="btn btn-ghost" href="#kontakt">Send besked</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <div class="label">Hvorfor vælge mig</div>
+      <ul class="hero-list">
+        <li><span class="n">01</span> Mestercertificeret anlægsgartner</li>
+        <li><span class="n">02</span> Lokalt i Dragør & Tårnby</li>
+        <li><span class="n">03</span> Gratis og uforpligtende tilbud</li>
+        <li><span class="n">04</span> Fast pris — ingen skjulte gebyrer</li>
+        <li><span class="n">05</span> Svar inden for 24 timer</li>
+      </ul>
+      <div class="rating-badge"><span class="stars">★★★★☆</span> 4.3 · Google anmeldelser</div>
+      <div class="hero-stats">
+        <div class="s"><div class="v">4.3★</div><div class="k">Google rating</div></div>
+        <div class="s"><div class="v">Mester</div><div class="k">Certificeret</div></div>
+        <div class="s"><div class="v">Dragør</div><div class="k">Lokalt område</div></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item"><span class="dot"></span> Mestercertificeret</div>
+      <div class="trust-item"><span class="dot"></span> Lokalt i Dragør & Tårnby</div>
+      <div class="trust-item"><span class="dot"></span> Professionelt udstyr</div>
+      <div class="trust-item"><span class="dot"></span> Gratis tilbud</div>
+      <div class="trust-item"><span class="dot"></span> Hurtig respons</div>
+    </div>
+  </div>
+</div>
+
+<!-- YDELSER -->
+<section class="blk" id="ydelser">
+  <div class="wrap">
+    <div class="sec-head fu">
+      <div>
+        <div class="eyebrow">01 — Hvad jeg tilbyder</div>
+        <h2 style="margin-top:18px">Ydelser fra Mester Per Nielsen</h2>
+      </div>
+      <p class="meta">Professionel anlægsgartner i Dragør — jeg tager mig af helheden.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-vis">
+        <img src="https://picsum.photos/seed/perniel01/800/600" alt="Mester Per Nielsen — haveanlæg i Dragør">
+      </div>
+      <div class="serv-list">
+        <div class="serv-item fu">
+          <span class="tag">01 — Haveanlæg</span>
+          <h3>Haveanlæg & design</h3>
+          <p>Komplet anlæg af haven fra bund til top — tilpasset dit hjem, din stil og dit budget.</p>
+        </div>
+        <div class="serv-item fu">
+          <span class="tag">02 — Belægning</span>
+          <h3>Belægning & fliser</h3>
+          <p>Indkørsler, terrasser og stier i natursten, fliser eller beton — solidt og holdbart håndværk.</p>
+        </div>
+        <div class="serv-item fu">
+          <span class="tag">03 — Beplantning</span>
+          <h3>Beplantning & træfældning</h3>
+          <p>Planting af træer, buske og stauder samt fældning og beskæring af eksisterende beplantning.</p>
+        </div>
+        <div class="serv-item fu">
+          <span class="tag">04 — Hegn</span>
+          <h3>Hegn & afskærmning</h3>
+          <p>Træhegn, flethegn og mure — vi skaber privatliv og afgrænser haven professionelt.</p>
+        </div>
+        <div class="serv-item fu">
+          <span class="tag">05 — Vedligeholdelse</span>
+          <h3>Vedligeholdelse</h3>
+          <p>Løbende pasning og pleje af private haver og grønne arealer hele sæsonen.</p>
+        </div>
+        <div class="serv-item fu">
+          <span class="tag">06 — Jordarbejde</span>
+          <h3>Dræn & jordarbejde</h3>
+          <p>Afvanding, planering og jordmodificering for optimale vækstbetingelser.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERI -->
+<section style="border-top:1px solid var(--line)">
+  <div style="max-width:100%;overflow:hidden">
+    <div class="gal-grid">
+      <div class="gal-item"><img src="https://picsum.photos/seed/perniel-gal1/700/450" alt="Haveanlæg Dragør"></div>
+      <div class="gal-item"><img src="https://picsum.photos/seed/perniel-gal2/700/450" alt="Belægning og terrasse"></div>
+      <div class="gal-item"><img src="https://picsum.photos/seed/perniel-gal3/700/450" alt="Beplantning og hegn"></div>
+    </div>
+  </div>
+</section>
+
+<!-- OM OS -->
+<section class="blk about-sec" id="om-os">
+  <div class="wrap">
+    <div class="sec-head fu">
+      <div>
+        <div class="eyebrow">02 — Om mig</div>
+        <h2 style="margin-top:18px">Anlægsgartner Mester Per Nielsen</h2>
+      </div>
+      <p class="meta" style="color:oklch(0.7 0.01 70)">Mestercertificeret anlægsgartner med base i Tårnby.</p>
+    </div>
+    <div class="about-body fu">
+      Jeg er Mester Per Nielsen — mestercertificeret anlægsgartner med base på Tømmerupvej i Tårnby.
+      Jeg hjælper private og erhvervskunder i hele Dragør og Tårnby-området med at skabe smukke,
+      funktionelle uderum. Uanset om det er en ny terrasse, en komplet haveomlægning eller løbende
+      vedligehold, møder jeg op til aftalt tid og leverer arbejde du kan stå inde for.
+    </div>
+    <div class="about-stats fu">
+      <div class="s"><div class="v">Dragør</div><div class="k">Arbejdsområde</div></div>
+      <div class="s"><div class="v">27 26 88 88</div><div class="k">Direkte kontakt</div></div>
+      <div class="s"><div class="v">Mester</div><div class="k">Certificering</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES -->
+<section class="blk" id="process" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head fu">
+      <div>
+        <div class="eyebrow">03 — Sådan arbejder jeg</div>
+        <h2 style="margin-top:18px">Fra første kontakt til færdigt arbejde</h2>
+      </div>
+      <p class="meta">Gennemsigtig proces — ingen overraskelser.</p>
+    </div>
+    <div class="process-steps">
+      <div class="proc-item fu">
+        <div class="proc-num">01</div>
+        <div class="proc-body">
+          <h3>Kontakt & tilbud</h3>
+          <p>Ring eller skriv til mig. Jeg svarer hurtigt og giver et gratis, uforpligtende tilbud på din opgave.</p>
+        </div>
+      </div>
+      <div class="proc-item fu">
+        <div class="proc-num">02</div>
+        <div class="proc-body">
+          <h3>Aftale & planlægning</h3>
+          <p>Vi gennemgår opgaven grundigt og laver en klar plan — du ved altid præcis hvad der sker og hvornår.</p>
+        </div>
+      </div>
+      <div class="proc-item fu">
+        <div class="proc-num">03</div>
+        <div class="proc-body">
+          <h3>Udførelse & aflevering</h3>
+          <p>Arbejdet udføres med omhu og til aftalt tid. Det du aftaler, er det du betaler — ingen overraskelser.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDELSER -->
+<section class="blk" id="anmeldelser" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head fu">
+      <div>
+        <div class="eyebrow">04 — Kundernes ord</div>
+        <h2 style="margin-top:18px">Anmeldelser af Mester Per Nielsen</h2>
+      </div>
+    </div>
+    <div class="reviews-editorial">
+      <div class="rev-item fu">
+        <div>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Love love love!"</blockquote>
+          <div class="src">— Upkar Kaur Chana · Google anmeldelse</div>
+        </div>
+        <div class="rev-aside">
+          <div class="score">4.3</div>
+          <div class="label">Google · 4 anm.</div>
+        </div>
+      </div>
+      <div class="rev-item fu">
+        <div>
+          <div class="stars">★★★★☆</div>
+          <blockquote>"Se alle vores anmeldelser på Google — samlet score 4,3 ud af 5."</blockquote>
+          <div class="src">— Kenn Hindsgavl · Google anmeldelse</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="blk" id="faq" style="border-top:1px solid var(--line);background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head fu">
+      <div>
+        <div class="eyebrow">05 — Spørgsmål & svar</div>
+        <h2 style="margin-top:18px">Ofte stillede spørgsmål</h2>
+      </div>
+    </div>
+    <div class="faq-list" style="max-width:800px">
+      <div class="faq-item">
+        <div class="faq-q">Tilbyder du gratis tilbud? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          Ja — jeg giver altid et gratis og uforpligtende tilbud. Ring på 27 26 88 88 eller send en besked, så vender jeg tilbage hurtigst muligt.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Hvilket område dækker du? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          Jeg er primært lokal i Dragør og Tårnby med omegn. Kontakt mig og fortæl om din opgave — vi finder en løsning.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Hvad er en mestercertificeret anlægsgartner? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          Mestercertificeringen er den højeste faglige udmærkelse inden for anlægsgartnerfaget og dokumenterer mange års praktisk erfaring samt en bestået mestreksamen. Det betyder større tryghed for dig som kunde.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Er der skjulte gebyrer? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          Nej. Jeg giver altid en klar og gennemsigtig pris — det du aftaler, er det du betaler. Ingen overraskelser på regningen.
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Arbejder du med både private og erhvervskunder? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          Ja, jeg arbejder med både private og erhvervskunder. Uanset opgavens størrelse yder jeg den samme høje kvalitet og service.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPS -->
+<section class="blk maps-sec" style="padding:0">
+  <div class="wrap" style="padding:0;max-width:100%">
+    <div class="maps-grid">
+      <div class="maps-info">
+        <div class="eyebrow" style="margin-bottom:24px">06 — Find mig</div>
+        <h3>Mester Per Nielsen</h3>
+        <div class="detail"><strong>Adresse</strong> Tømmerupvej 65, 2770 Tårnby</div>
+        <div class="detail"><strong>Telefon</strong> <a href="tel:27268888" style="color:var(--accent)">27 26 88 88</a></div>
+        <div class="detail"><strong>Område</strong> Dragør & Tårnby</div>
+        <a class="btn btn-primary" href="tel:27268888" style="margin-top:28px">Ring nu: 27 26 88 88</a>
+      </div>
+      <div class="maps-embed">
+        <iframe src="https://maps.google.com/maps?q=Tømmerupvej+65%2C+2770+Tårnby%2C+Denmark&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="contact blk" id="kontakt">
+  <div class="wrap contact-grid">
+    <div class="fu">
+      <div class="eyebrow">07 — Kontakt</div>
+      <h2>Få et uforpligtende tilbud</h2>
+      <p class="lede">Kontakt Mester Per Nielsen i Dragør for en snak om din opgave — jeg vender hurtigt tilbage.</p>
+      <div class="contact-info">
+        <div>📞 &nbsp;27 26 88 88</div>
+        <div>📍 &nbsp;Tømmerupvej 65, 2770 Tårnby</div>
+      </div>
+    </div>
+    <form class="contact-form fu" onsubmit="return false">
+      <div class="field"><label>Navn</label><input type="text" placeholder="Dit navn"></div>
+      <div class="field"><label>Telefon / E-mail</label><input type="text" placeholder="Så jeg kan ringe tilbage"></div>
+      <div class="field"><label>Besked</label><textarea rows="4" placeholder="Beskriv kort din opgave…"></textarea></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center">Send besked til Mester Per Nielsen</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="mark">M</span> Mester Per Nielsen</div>
+        <p style="color:oklch(0.7 0.01 70);font-size:14px;max-width:32ch">Mestercertificeret anlægsgartner med base i Tårnby — professionelt arbejde i Dragør og omegn.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <p>27 26 88 88</p>
+        <p>Tømmerupvej 65, 2770 Tårnby</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <a href="#ydelser">Ydelser</a>
+        <a href="#om-os">Om mig</a>
+        <a href="#anmeldelser">Anmeldelser</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2025 Anlægsgartner Mester Per Nielsen</span>
+      <span>Tømmerupvej 65, 2770 Tårnby</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:27268888">📞 Ring nu — 27 26 88 88</a>
+</div>
+
+<script type="module">
+import { animate, inView, stagger } from 'https://esm.sh/motion@12';
+
+/* Hero entrance */
+const heroEls = [
+  document.querySelector('.hero .eyebrow'),
+  document.querySelector('.hero h1'),
+  document.querySelector('.hero .lede'),
+  document.querySelector('.hero .about-blurb'),
+  document.querySelector('.hero-cta'),
+].filter(Boolean);
+animate(heroEls, { opacity: [0,1], y: [28,0] }, {
+  duration: 0.75, ease: [0.22,0.03,0.26,1],
+  delay: stagger(0.12, { start: 0.1 })
+});
+const heroSide = document.querySelector('.hero-side');
+if (heroSide) animate(heroSide, { opacity: [0,1], x: [18,0] }, { duration: 0.75, delay: 0.5, ease: 'easeOut' });
+
+/* Trust strip */
+inView('.trust', () => {
+  animate(document.querySelectorAll('.trust-item'), { opacity: [0,1], y: [12,0] }, { duration: 0.5, delay: stagger(0.07) });
+});
+
+/* Gallery */
+inView('.gal-grid', () => {
+  animate(document.querySelectorAll('.gal-item'), { opacity: [0,1], scale: [0.97,1] }, { duration: 0.6, delay: stagger(0.1) });
+}, { amount: 0.2 });
+
+/* All .fu elements */
+document.querySelectorAll('.fu').forEach(el => {
+  inView(el, () => {
+    animate(el, { opacity: [0,1], y: [22,0] }, { duration: 0.65, ease: [0.22,0.03,0.26,1] });
+  }, { amount: 0.15 });
+});
+
+/* FAQ */
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+/* Smooth scroll */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    window.scrollTo({ top: target.offsetTop - document.querySelector('header').offsetHeight - 20, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
